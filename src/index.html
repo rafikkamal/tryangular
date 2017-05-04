@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Page Title</title>
+	<!-- <script src="./js/angular.min.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-resource.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.min.js"></script>
+
+	<script src="./js/app/app.module.js"></script>
+	<script src="./js/app/app.config.js"></script>
+
+	<script src="./js/app/blog-list/blog-list.module.js"></script>
+	<script src="./js/app/blog-list/blog-list.component.js"></script>
+
+	<script src="./js/app/blog-detail/blog-detail.module.js"></script>
+	<script src="./js/app/blog-detail/blog-detail.component.js"></script>
+
+	<script src="./js/app/core/post/post.module.js"></script>
+	<script src="./js/app/core/post/post.service.js"></script>
+
+	<script src="./js/app/utils/confirm-click/confirm-click.module.js"></script>
+	<script src="./js/app/utils/confirm-click/confirm-click.directive.js"></script>
+</head>
+<body ng-app="try">
+	<!--  
+		#SERVER
+		xampp => http://127.0.0.1/angular_project/tryangular/src/index.html#!/  
+
+		#JSON
+		http://127.0.0.1/angular_project/tryangular/src/json/post.json
+	-->
+	<!--
+		#SERVER
+		[run(cmd=> \xampp\htdocs\angualr_project\tryangular\src : )
+		python -m httpserver]
+		http://127.0.0.1:8000/index.html#!/
+
+		#JSON (src/json/post.json)
+		http://127.0.0.1:8000/json/post.json
+	-->
+	<!-- Add #!/ before every url in html etc. <a href="#!/link_rest_here"></a>-->
+
+	<!-- <blog-list></blog-list> -->
+	<div ng-view></div>
+
+</body>
+</html>
